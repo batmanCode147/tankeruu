@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 5482668974222955909}
   m_Layer: 0
-  m_Name: obstacles
+  m_Name: temp_obstacles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5482668974222955909
 Transform:
@@ -47,6 +47,10 @@ PrefabInstance:
     - target: {fileID: 1116976845992413262, guid: 44421276e6da3d047a50aa8d481ba201, type: 3}
       propertyPath: m_Name
       value: obstacle (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1116976845992413262, guid: 44421276e6da3d047a50aa8d481ba201, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 1116976845992413266, guid: 44421276e6da3d047a50aa8d481ba201, type: 3}
       propertyPath: m_RootOrder
@@ -110,6 +114,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: obstacle (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1116976845992413262, guid: 44421276e6da3d047a50aa8d481ba201, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1116976845992413266, guid: 44421276e6da3d047a50aa8d481ba201, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -171,6 +179,10 @@ PrefabInstance:
     - target: {fileID: 1116976845992413262, guid: 44421276e6da3d047a50aa8d481ba201, type: 3}
       propertyPath: m_Name
       value: obstacle (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1116976845992413262, guid: 44421276e6da3d047a50aa8d481ba201, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 1116976845992413266, guid: 44421276e6da3d047a50aa8d481ba201, type: 3}
       propertyPath: m_RootOrder
@@ -234,6 +246,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: obstacle (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1116976845992413262, guid: 44421276e6da3d047a50aa8d481ba201, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1116976845992413266, guid: 44421276e6da3d047a50aa8d481ba201, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -295,6 +311,10 @@ PrefabInstance:
     - target: {fileID: 1116976845992413262, guid: 44421276e6da3d047a50aa8d481ba201, type: 3}
       propertyPath: m_Name
       value: obstacle (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1116976845992413262, guid: 44421276e6da3d047a50aa8d481ba201, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 1116976845992413266, guid: 44421276e6da3d047a50aa8d481ba201, type: 3}
       propertyPath: m_RootOrder
@@ -358,6 +378,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: obstacle (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1116976845992413262, guid: 44421276e6da3d047a50aa8d481ba201, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1116976845992413266, guid: 44421276e6da3d047a50aa8d481ba201, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -419,6 +443,10 @@ PrefabInstance:
     - target: {fileID: 1116976845992413262, guid: 44421276e6da3d047a50aa8d481ba201, type: 3}
       propertyPath: m_Name
       value: obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 1116976845992413262, guid: 44421276e6da3d047a50aa8d481ba201, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 1116976845992413266, guid: 44421276e6da3d047a50aa8d481ba201, type: 3}
       propertyPath: m_RootOrder
