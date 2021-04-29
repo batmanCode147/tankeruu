@@ -1,2 +1,2 @@
-# Repository for Still Alive Studios Coding Assignment
+# Repository for a tankgame
 
