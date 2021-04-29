@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1101872618
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1101872619}
+  m_Layer: 0
+  m_Name: missile_spawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1101872619
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1101872618}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.1, z: -1.187}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3821679293326741900}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3812155860735502043
 GameObject:
   m_ObjectHideFlags: 0
@@ -76,6 +106,7 @@ GameObject:
   - component: {fileID: 3821679293326741901}
   - component: {fileID: 3821679293326741902}
   - component: {fileID: 3821679293326741903}
+  - component: {fileID: 1141105536}
   m_Layer: 0
   m_Name: tank_head
   m_TagString: Untagged
@@ -95,6 +126,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7142788028310598285}
+  - {fileID: 1101872619}
   m_Father: {fileID: 1724151381118784205}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -160,6 +192,25 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1141105536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3821679293326741896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da9cc3c63e57363459297f36285d09f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotationSpeed: 30
+  _projectileSpeed: 2000
+  _missileSpeed: 10
+  _debugTarget: {fileID: 0}
+  _projectile: {fileID: 3500537239388620465, guid: 783a38fc4334a5a48a03b6851a64f726, type: 3}
+  _missile: {fileID: 168907026088446832, guid: 4e3a2cd42893c5c49bf1079fe65b99dd, type: 3}
+  _missileSpawn: {fileID: 1101872619}
 --- !u!1 &3821679294531286248
 GameObject:
   m_ObjectHideFlags: 0

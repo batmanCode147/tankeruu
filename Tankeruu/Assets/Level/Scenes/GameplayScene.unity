@@ -328,31 +328,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1101571208}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 16.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1141105531 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3821679293326741896, guid: 33a357c05db73ae46aff0ea4a7fd5e4d, type: 3}
-  m_PrefabInstance: {fileID: 3821679294333530867}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1141105536
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1141105531}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da9cc3c63e57363459297f36285d09f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _rotationSpeed: 20
-  _debugTarget: {fileID: 1101571211}
 --- !u!4 &1639866736 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6768727351713972405, guid: 204c08dbc01868546a637fc489494bb3, type: 3}
@@ -479,6 +460,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1141105536, guid: 33a357c05db73ae46aff0ea4a7fd5e4d, type: 3}
+      propertyPath: _debugTarget
+      value: 
+      objectReference: {fileID: 1101571211}
+    - target: {fileID: 1141105536, guid: 33a357c05db73ae46aff0ea4a7fd5e4d, type: 3}
+      propertyPath: _missileSteerSpeed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1724151381118784205, guid: 33a357c05db73ae46aff0ea4a7fd5e4d, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -540,6 +529,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 4959352601108829554, guid: bce4c511d65dfbd49b45329416e01328, type: 3}
+      propertyPath: near clip plane
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 4959352601108829557, guid: bce4c511d65dfbd49b45329416e01328, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -566,15 +559,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4959352601108829557, guid: bce4c511d65dfbd49b45329416e01328, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4959352601108829557, guid: bce4c511d65dfbd49b45329416e01328, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4959352601108829557, guid: bce4c511d65dfbd49b45329416e01328, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 4959352601108829557, guid: bce4c511d65dfbd49b45329416e01328, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
