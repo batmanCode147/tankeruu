@@ -9,6 +9,11 @@ public class HitTarget : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
+        Explode();
+    }
+
+    public void Explode()
+    {
         Instantiate(_hitFX, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }

@@ -7,7 +7,6 @@ using UnityEngine;
 public class HomingMissile : MonoBehaviour
 {
     private Rigidbody _rigidbody;
-    private Vector3 _spawnPosition;
 
     public Vector3 Target { get; set; }
     public float Speed { get; set; }
@@ -16,7 +15,6 @@ public class HomingMissile : MonoBehaviour
     private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody>();
-        _spawnPosition = _rigidbody.position;
     }
 
     private void FixedUpdate()
@@ -28,7 +26,7 @@ public class HomingMissile : MonoBehaviour
     {
         // fly and rotate towards target
         Quaternion rotateTowards = Quaternion.LookRotation(Target - _rigidbody.position);
-        
+
         _rigidbody.velocity = transform.forward * Speed;
         _rigidbody.MoveRotation(Quaternion.RotateTowards(transform.rotation, rotateTowards, RotationSpeed));
     }

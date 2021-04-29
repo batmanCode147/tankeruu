@@ -9,11 +9,11 @@ public class PlayerShoot : MonoBehaviour
     [SerializeField] private float _projectileSpeed;
     [SerializeField] private float _missileSpeed;
     [SerializeField] private float _missileSteerSpeed;
-
-    [SerializeField] private Transform _debugTarget;
     [SerializeField] private GameObject _projectile = default;
     [SerializeField] private GameObject _missile = default;
     [SerializeField] private Transform _missileSpawn = default;
+    [SerializeField] private Transform _projectileSpawn = default;
+    [SerializeField] private Transform _debugTarget;
 
     private Camera _camera;
     private Vector3 _targetPos;
@@ -33,27 +33,23 @@ public class PlayerShoot : MonoBehaviour
         _debugTarget.position = _targetPos;
     }
 
+    private void GetInput()
+    {
+        CalcMousePos();
+
+        if (Input.GetMouseButtonDown(MOUSE_LEFT_BTN))
+            ShootProjectile();
+
+        if (Input.GetMouseButtonDown(MOUSE_RIGHT_BTN))
+            ShootMissile();
+    }
+
     private void RotateTowards()
     {
         Vector3 toTarget = _targetPos - transform.position;
         Quaternion desiredRotation = Quaternion.LookRotation(toTarget, Vector3.up);
 
         transform.rotation = Quaternion.RotateTowards(transform.rotation, desiredRotation, _rotationSpeed * Time.deltaTime);
-    }
-
-    private void GetInput()
-    {
-        CalcMousePos();
-
-        if (Input.GetMouseButtonDown(MOUSE_LEFT_BTN))
-        {
-            ShootProjectile();
-        }
-
-        if (Input.GetMouseButtonDown(MOUSE_RIGHT_BTN))
-        {
-            ShootMissile();
-        }
     }
 
     private void ShootMissile()
@@ -71,7 +67,7 @@ public class PlayerShoot : MonoBehaviour
 
     private void ShootProjectile()
     {
-        GameObject projectile = Instantiate(_projectile, transform.position + transform.forward * 3f, Quaternion.identity);
+        GameObject projectile = Instantiate(_projectile, _projectileSpawn.position, Quaternion.identity);
         Rigidbody rb = projectile.GetComponent<Rigidbody>();
 
         rb.AddForce(transform.forward * _projectileSpeed);
