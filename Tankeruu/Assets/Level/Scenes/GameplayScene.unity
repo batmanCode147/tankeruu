@@ -465,8 +465,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1101571211}
     - target: {fileID: 1141105536, guid: 33a357c05db73ae46aff0ea4a7fd5e4d, type: 3}
+      propertyPath: _missileSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1141105536, guid: 33a357c05db73ae46aff0ea4a7fd5e4d, type: 3}
       propertyPath: _missileSteerSpeed
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1724151381118784205, guid: 33a357c05db73ae46aff0ea4a7fd5e4d, type: 3}
       propertyPath: m_RootOrder
